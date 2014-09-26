@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Logo Express</title>
+
+    <meta name="description" content="Logo Express - The fast paced brand match game.">
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- -- Load these two scripts first to hide / show elements as soon as possible -- -->
+    <script type="text/javascript" src="script/jQuery.js"></script>
+    <script type="text/javascript" src="script/logo_game.js"></script>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="script/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="script/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="script/jquery.preload.min.js"></script>
+    <script type="text/javascript" src="script/jquery.ae.image.resize.min.js"></script>
+
+</head>
+
+<body>
+    <div id="sound"></div>
+    <div class="container">
+        <div id="content">
+
+            
+            
+            <div id="headerContainer" class="unit span-grid">
+                <div id="header">
+                    <p class="bravo">
+                        <a href="http://www.purelywebdesign.co.uk/games/logogame">Logo Express</a>
+                    </p>
+                </div>
+            </div>
+
+            
+            
+            
+            <div id="menuContainer" class unit span-grid>
+                <div id="menuPlacement">
+                    <span class="menuIcon">
+                        <img src="images/layout/burger_menu.png" width="46" height="40">
+                    </span>
+                </div>
+            </div>
+
+            
+            
+            
+            <div id="startGame" class="endGameScreen">
+                <div class="unit span-grid ">
+                    <div id="contentWelcome" class="introText">
+
+                        <h1>Logo Express</h1>
+                        <p id="subTitle">The quick thinking brand match game</p>
+                        <p>Drag the correct logo onto the brand name.</p>
+                        
+                        <p>The quicker you are the more you score.</p>
+                        <br><br>
+
+                        <div class="unit one-of-three"></div>
+                        <div id="startButton" class="unit one-of-three button rounded">
+                            <p id="startgame">Start Game</p>
+                        </div>
+                        <div class="unit one-of-three"></div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            
+            <div id="gameOverScreen" class="endGameScreen">
+                <div id="gameOver" class="unit span-grid">
+                    <div class="introText">
+
+                        <p id="gametitle" class="alpha">Game Over</p>
+                        <br>
+                        <p>You scored <span id="scoreDisplay"></span> points.</p>
+                        <p id="scoreslot"></p>
+                        <br>
+                        <p>Tip. Quick guesses get bonus points.</p>
+
+                    </div>
+
+                    <div class="unit one-of-three"></div>
+                    <div class="unit one-of-three button rounded">
+                        <p id="replaygame">Play Again</p>
+                    </div>
+                    <div class="unit one-of-three"></div>
+                    <div class="unit one-of-three"></div>
+                    <div class="unit one-of-three button rounded categoryButton">
+                        <p id="selectCategory">Change Category</p>
+                    </div>
+                    <div class="unit one-of-three"></div>
+                </div>
+            </div>
+
+
+            
+            <div id="roundCompleteScreen" class="endGameScreen">
+                <div id="roundComplete" class="unit span-grid">
+                    <div class="introText">
+                        <p id="gametitle" class="alpha">Round Complete</p>
+                        <br>
+                        <p>Well done, you won that round and scored
+                            <span id="scoreDisplay3"></span>points.</p>
+
+                        <p id="scoreslot3"></p>
+                        <br>
+                        <p>Tip. String together correct guesses for bonus points.</p>
+                    </div>
+
+                    <div class="unit one-of-three"></div>
+                    <div class="unit one-of-three button rounded">
+                        <p id="nextRound">Play Next Round</p>
+                    </div>
+                    <div class="unit one-of-three"></div>
+
+                    <div class="unit one-of-three"></div>
+
+                </div>
+            </div>
+
+            
+            
+            <div id="gameCompleteScreen" class="endGameScreen">
+                <div id="gameComplete" class="unit span-grid">
+                    <div class="introText">
+                        
+                        <p id="gametitle" class="alpha">Well Done!</p>
+                        <br>
+                        <p>Wow, you aced that round and completed the game. </p>
+                        <br>
+                        
+                        <p id="scoreslot2"></p>
+                        
+
+                    </div>
+
+                    <div class="unit one-of-three"></div>
+                    <div class="unit one-of-three button rounded">
+                        <p id="restartGame"><a href="index.html">Restart the game</a></p>
+                    </div>
+                    <div class="unit one-of-three"></div>
+
+                    <div class="unit one-of-three"></div>
+                    <div class="unit one-of-three button rounded categoryButton">
+                        <p id="selectCategory">Change Category</p>
+                    </div>
+                    <div class="unit one-of-three"></div>
+
+                </div>
+            </div>
+
+            
+
+            <div id="categoryWrap">
+                <div id="cat">
+                    <div class="unit span-grid">
+                        <div class="categoryTitle">
+                            <h3>Select a Category</h3>
+                        </div>
+                    </div>
+
+                    <div class="unit one-of-three imageLuckyDip button target rounded">
+                        <p class="luckyDipButton">Lucky Dip</p>
+                    </div>
+
+                    <div class="unit one-of-three imageTechnology button target rounded">
+                        <p class="technologyButton">Technology</p>
+                    </div>
+
+                    <div class="unit one-of-three imageFashion button target rounded">
+                        <p class="fashionButton">Fashion & Clothing</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="menuScreen" class="unit span-grid">
+                
+                <p class="alpha">How to play</p>
+                <br>
+                <p>Drag and drop your chosen Logo on to the answer slot. 
+                <br>If you'recorrect the screen will refresh with a new selection.</p>
+                <br>
+                <p>Three rounds to complete.</p>
+                <p>Bonuses for quick guesses and combo strings.</p>
+                <br>
+                <div class="unit one-of-three"></div>
+                <div id="closePadding" class="unit one-of-three button rounded">
+                    <p id="closeMenuButton">Close Menu</p>
+                </div>
+                <div class="unit one-of-three"></div>
+            </div>
+
+            
+            
+
+            <div id="gamePlacement">
+                <div id="cardPile" class="unit span-grid rounded"></div>
+                <div id="progressbar" class="unit span-grid"></div>
+
+                <div id="gameMessage" class="unit span-grid"></div>
+
+                <div id="cardSlots" class="unit span-grid rounded"></div>
+                <div id="livesHolder">
+                    <img src="images/layout/sm-heart.png" width="95" height="90">
+                    <div id="livesPlacement" class="delta">
+                        <span id="livesDisplay"></span>
+                    </div>
+                </div>
+                <div id="score" class="unit span-grid">
+                    <div id="scoreHolder" class="delta rounded"></div>
+                </div>
+            </div>
+
+            
+            
+            
+        </div>
+    </div>
+</body>
+
+</html>
